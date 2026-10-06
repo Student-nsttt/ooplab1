@@ -36,7 +36,7 @@ int* array_resize(int* arr, std::size_t size, std::size_t new_size) {
 
 int* array_insert(int* arr, std::size_t& size, std::size_t pos, int value) {
     if (pos > size) pos = size;
-    int* new_arr = new in[size + 1];
+    int* new_arr = new int[size + 1];
     for (std::size_t i = 0; i < pos; ++i) new_arr[i] = arr[i];
     new_arr[pos] = value;
     for (std::size_t i = pos; i < size; ++i) new_arr[i + 1] = arr[i];
@@ -62,7 +62,7 @@ int* array_remove(int* arr, std::size_t& size, std::size_t pos) {
 }
 
 void array_print(const int* arr, std::size_t size) {
-    if (!arr || size = 0) {
+    if (!arr || size == 0) {
         std::cout << "Array is empty \n";
         return;
     }
