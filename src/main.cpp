@@ -43,7 +43,6 @@ int main() {
                 std::cout << "Enter new size: ";
                 std::cin >> new_size;
                 arr = array_resize(arr, size, new_size);
-                size = new_size;
                 break;
             }
             case 3: {
@@ -73,6 +72,7 @@ int main() {
                 std::cout << "Enter positions to rotate: ";
                 std::cin >> k;
                 array_rotate_left(arr, size, k);
+                array_print(arr, size);
                 break;
             }
             case 7: {

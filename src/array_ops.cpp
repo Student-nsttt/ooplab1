@@ -11,9 +11,10 @@ void array_delete(int*& arr) {
     arr = nullptr;
 }
 
-int* array_resize(int* arr, std::size_t size, std::size_t new_size) {
+int* array_resize(int* arr, std::size_t& size, std::size_t new_size) {
     if (new_size == 0) {
         array_delete(arr);
+        size = 0;
         return nullptr;
     }
 
@@ -30,6 +31,8 @@ int* array_resize(int* arr, std::size_t size, std::size_t new_size) {
     }
     
     array_delete(arr);
+
+    size = new_size;
     
     return new_arr;
 }
@@ -62,7 +65,7 @@ int* array_remove(int* arr, std::size_t& size, std::size_t pos) {
 }
 
 void array_print(const int* arr, std::size_t size) {
-    if (!arr || size == 0) {
+    if (arr == nullptr || size == 0) {
         std::cout << "Array is empty \n";
         return;
     }
@@ -76,7 +79,8 @@ void array_print(const int* arr, std::size_t size) {
 
 
 void array_insertion_sort(int* arr, std::size_t size) {
-    if (!arr || size < 2) {
+    // arr = [40, 10, 30, 20]
+    if (arr == nullptr || size < 2) {
         return;
     }
     for (std::size_t i = 1; i < size; ++i) {
@@ -104,7 +108,7 @@ static void array_reverse_sub(int* arr, std::size_t start, std::size_t end) {
 
 
 void array_rotate_left(int* arr, std::size_t size, std::size_t k) {
-    if (!arr || size < 2) {
+    if (arr == nullptr || size < 2) {
         return;
     }
     k = k % size;

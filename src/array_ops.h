@@ -1,9 +1,9 @@
 #pragma once
 #include <cstddef>
 int* array_create(std::size_t size); // new int[size], +1 слот под '\0'
-не нужен
+// не нужен
 void array_delete(int*& arr); // delete[] и обнулить указатель
-int* array_resize(int* arr, std::size_t size, std::size_t new_size); // новая памят
+int* array_resize(int* arr, std::size_t& size, std::size_t new_size); // новая памят
 // ь + копия
 int* array_insert(int* arr, std::size_t& size, std::size_t pos, int value); // вста
 // вка

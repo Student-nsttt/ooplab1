@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Debug"/>
+		<BuildType Name="Release"/>
+		<BuildType Name="MinSizeRel"/>
+		<BuildType Name="RelWithDebInfo"/>
+		<Platform Name="x64"/>
+	</Configurations>
+	<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="5c45ed32-1752-39ee-95d1-1433518c78c5" DefaultStartup="true">
+		<BuildDependency Project="../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="googlemock/gmock.vcxproj"/>
+		<BuildDependency Project="googlemock/gmock_main.vcxproj"/>
+		<BuildDependency Project="googletest/gtest.vcxproj"/>
+		<BuildDependency Project="googletest/gtest_main.vcxproj"/>
+	</Project>
+	<Project Path="INSTALL.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="b0482572-0e98-36d3-80c7-28c0efc707de">
+		<BuildDependency Project="ALL_BUILD.vcxproj"/>
+		<BuildDependency Project="../ZERO_CHECK.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="../ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="2130be33-763b-3724-9243-d4b71db787a4"/>
+	<Project Path="googlemock/gmock.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="c9170b44-c19a-3219-90e2-c05226a5af19">
+		<BuildDependency Project="../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="googlemock/gmock_main.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="eefb77b3-05a5-3df0-a8b4-9730ab14752c">
+		<BuildDependency Project="../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="googletest/gtest.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="3e9d84af-cc8c-3b2d-8bdc-9e711028dcbc">
+		<BuildDependency Project="../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="googletest/gtest_main.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="7d5b8644-75b3-360a-9136-6d6b4e8ba02f">
+		<BuildDependency Project="../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="googletest/gtest.vcxproj"/>
+	</Project>
+</Solution>

@@ -1,0 +1,10 @@
+^C:\OOPLAB1\BUILD\CMAKEFILES\327328B6E963F31208257568174B1C14\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/OOPLAB1 -BC:/OOPLAB1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/OOPLAB1/build/ArrayOpsConsole.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

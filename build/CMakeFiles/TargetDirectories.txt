@@ -1,0 +1,15 @@
+C:/OOPLAB1/build/CMakeFiles/array_program.dir
+C:/OOPLAB1/build/CMakeFiles/array_tests.dir
+C:/OOPLAB1/build/CMakeFiles/INSTALL.dir
+C:/OOPLAB1/build/CMakeFiles/ALL_BUILD.dir
+C:/OOPLAB1/build/CMakeFiles/ZERO_CHECK.dir
+C:/OOPLAB1/build/googletest/CMakeFiles/INSTALL.dir
+C:/OOPLAB1/build/googletest/CMakeFiles/ALL_BUILD.dir
+C:/OOPLAB1/build/googletest/googlemock/CMakeFiles/gmock.dir
+C:/OOPLAB1/build/googletest/googlemock/CMakeFiles/gmock_main.dir
+C:/OOPLAB1/build/googletest/googlemock/CMakeFiles/INSTALL.dir
+C:/OOPLAB1/build/googletest/googlemock/CMakeFiles/ALL_BUILD.dir
+C:/OOPLAB1/build/googletest/googletest/CMakeFiles/gtest.dir
+C:/OOPLAB1/build/googletest/googletest/CMakeFiles/gtest_main.dir
+C:/OOPLAB1/build/googletest/googletest/CMakeFiles/INSTALL.dir
+C:/OOPLAB1/build/googletest/googletest/CMakeFiles/ALL_BUILD.dir
